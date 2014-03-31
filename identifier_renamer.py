@@ -141,7 +141,7 @@ i += i**i
 
 import sys
 if __name__ == "__main__":
-    code_str = open(sys.argv[1], 'U').read()
+    code_str = open(sys.argv[1], 'U').read() #opening with universal newline format-thingy
     print rename_identifier(code_str, 'lett', 'elena')
 
     # experimental JSON version
