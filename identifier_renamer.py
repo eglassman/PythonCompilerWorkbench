@@ -100,7 +100,8 @@ i += i**i
 # let's rename every 'i' to 'elena'
 '''
 
+import sys
 if __name__ == "__main__":
-    code_str = TEST_PROGRAM
-    print rename_identifier(code_str, 'i', 'elena')
+    code_str = open(sys.argv[1], 'U').read()
+    print rename_identifier(code_str, 'lett', 'elena')
 
